@@ -15,7 +15,7 @@ public class Max_Frequency_Character {  // Burte force Go for Hashing ..
 	
 public static char max_occurence(String str) {
 	
-	if(str.length()==1) { 
+	if(str.length()==1) {  
 		return str.charAt(0);	
 		}  
 		
