@@ -53,6 +53,9 @@ public static String reverse_words1(String str) { // using string
  	}
  	final_str = temp_str + final_str;
 	return final_str;
-}
+} 
+// 	method3(String str){ O(N*N)
+// 	   - Reverse the String
+//         - Now reverse individual word }
 
 }
