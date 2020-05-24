@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Reversing_words_in_String {
 	public static Scanner in = new Scanner(System.in);
 public static void main(String[] args) {
-//	Scanner in = new Scanner(System.in);
+
 	String str= in.nextLine();
-//	System.out.println(reverse_words1(str) );	
+	System.out.println(reverse_words1(str) );	
 	System.out.println(reverse_words2(str) );	 
 	
 }
 
 public static StringBuilder reverse_words2( String str) { // using String builder
-		int L= str.length();
+		
 		StringBuilder temp_str = new StringBuilder();
 		StringBuilder final_str =new StringBuilder();
 		
@@ -30,7 +30,7 @@ public static StringBuilder reverse_words2( String str) { // using String builde
 			}
 		}
 			final_str.insert(0, temp_str);
-   	return final_str;
+   	return final_str;  // OR if return type string--> 	return final_str.toString();
 	
 	
 }
@@ -41,7 +41,7 @@ public static String reverse_words1(String str) { // using string
 	String final_str="";
 	
 	char space = ' ';
-	char[] ch = str.toCharArray();
+	char[] ch = str.toCharArray(); // String to character Array
  	for(int i=0; i < L ; i++ ) {
  		if(ch[i] != space ) {
  			temp_str = temp_str +  ch[i] ; // typecasting awesome.. -- String + char
