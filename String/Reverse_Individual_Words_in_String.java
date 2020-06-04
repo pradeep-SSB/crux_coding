@@ -25,6 +25,7 @@ public class Reverse_Individual_Words_in_String {		//Output : olleH dlroW
 			}
 		}
 		final_string.append(temp_string);
+					// return final_string.toString();  if returning string Instead StringBuilder
 		return final_string;
 	}
 
